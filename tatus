@@ -1,0 +1,231 @@
+[33mcommit f4e27d7c8900de5a52b2a3a0404c5fb6a9fb09ff[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: vim12345 <vk2699945@gmail.com>
+Date:   Thu Jul 25 12:22:18 2024 +0530
+
+    Initial commit
+
+[1mdiff --git a/.ipynb_checkpoints/iterables_vs_iterators-checkpoint.ipynb b/.ipynb_checkpoints/iterables_vs_iterators-checkpoint.ipynb[m
+[1mnew file mode 100644[m
+[1mindex 0000000..363fcab[m
+[1m--- /dev/null[m
+[1m+++ b/.ipynb_checkpoints/iterables_vs_iterators-checkpoint.ipynb[m
+[36m@@ -0,0 +1,6 @@[m
+[32m+[m[32m{[m
+[32m+[m[32m "cells": [],[m
+[32m+[m[32m "metadata": {},[m
+[32m+[m[32m "nbformat": 4,[m
+[32m+[m[32m "nbformat_minor": 5[m
+[32m+[m[32m}[m
+[1mdiff --git a/.ipynb_checkpoints/string_formattting-checkpoint.ipynb b/.ipynb_checkpoints/string_formattting-checkpoint.ipynb[m
+[1mnew file mode 100644[m
+[1mindex 0000000..363fcab[m
+[1m--- /dev/null[m
+[1m+++ b/.ipynb_checkpoints/string_formattting-checkpoint.ipynb[m
+[36m@@ -0,0 +1,6 @@[m
+[32m+[m[32m{[m
+[32m+[m[32m "cells": [],[m
+[32m+[m[32m "metadata": {},[m
+[32m+[m[32m "nbformat": 4,[m
+[32m+[m[32m "nbformat_minor": 5[m
+[32m+[m[32m}[m
+[1mdiff --git a/iterables_vs_iterators.ipynb b/iterables_vs_iterators.ipynb[m
+[1mnew file mode 100644[m
+[1mindex 0000000..d317af7[m
+[1m--- /dev/null[m
+[1m+++ b/iterables_vs_iterators.ipynb[m
+[36m@@ -0,0 +1,150 @@[m
+[32m+[m[32m{[m
+[32m+[m[32m "cells": [[m
+[32m+[m[32m  {[m
+[32m+[m[32m   "cell_type": "code",[m
+[32m+[m[32m   "execution_count": 1,[m
+[32m+[m[32m   "id": "65e56a0a-aa01-44da-9396-ab3bc822a3c4",[m
+[32m+[m[32m   "metadata": {},[m
+[32m+[m[32m   "outputs": [[m
+[32m+[m[32m    {[m
+[32m+[m[32m     "name": "stdout",[m
+[32m+[m[32m     "output_type": "stream",[m
+[32m+[m[32m     "text": [[m
+[32m+[m[32m      "1\n",[m
+[32m+[m[32m      "2\n",[m
+[32m+[m[32m      "3\n",[m
+[32m+[m[32m      "4\n",[m
+[32m+[m[32m      "5\n",[m
+[32m+[m[32m      "6\n",[m
+[32m+[m[32m      "7\n"[m
+[32m+[m[32m     ][m
+[32m+[m[32m    }[m
+[32m+[m[32m   ],[m
+[32m+[m[32m   "source": [[m
+[32m+[m[32m    "lst=[1,2,3,4,5,6,7]\n",[m
+[32m+[m[32m    "for i in lst:\n",[m
+[32m+[m[32m    "    print(i)"[m
+[32m+[m[32m   ][m
+[32m+[m[32m  },[m
+[32m+[m[32m  {[m
+[32m+[m[32m   "cell_type": "code",[m
+[32m+[m[32m   "execution_count": 26,[m
+[32m+[m[32m   "id": "f56b8252-4b21-4302-b4cc-1d1f256ad82f",[m
+[32m+[m[32m   "metadata": {},[m
+[32m+[m[32m   "outputs": [],[m
+[32m+[m[32m   "source": [[m
+[32m+[m[32m    "lst1=iter(lst)"[m
+[32m+[m[32m   ][m
+[32m+[m[32m  },[m
+[32m+[m[32m  {[m
+[32m+[m[32m   "cell_type": "code",[m
+[32m+[m[32m   "execution_count": 27,[m
+[32m+[m[32m   "id": "be331178-fb41-4dfc-aa28-9259baeafff5",[m
+[32m+[m[32m   "metadata": {},[m
+[32m+[m[32m   "outputs": [[m
+[32m+[m[32m    {[m
+[32m+[m[32m     "data": {[m
+[32m+[m[32m      "text/plain": [[m
+[32m+[m[32m       "<list_iterator at 0x1ec8a069450>"[m
+[32m+[m[32m      ][m
+[32m+[m[32m     },[m
+[32m+[m[32m     "execution_count": 27,[m
+[32m+[m[32m     "metadata": {},[m
+[32m+[m[32m     "output_type": "execute_result"[m
+[32m+[m[32m    }[m
+[32m+[m[32m   ],[m
+[32m+[m[32m   "source": [[m
+[32m+[m[32m    "lst1"[m
+[32m+[m[32m   ][m
+[32m+[m[32m  },[m
+[32m+[m[32m  {[m
+[32m+[m[32m   "cell_type": "code",[m
+[32m+[m[32m   "execution_count": 29,[m
+[32m+[m[32m   "id": "9580a25b-4328-4c03-a9de-0db728c1e03d",[m
+[32m+[m[32m   "metadata": {},[m
+[32m+[m[32m   "outputs": [[m
+[32m+[m[32m    {[m
+[32m+[m[32m     "data": {[m
+[32m+[m[32m      "text/plain": [[m
+[32m+[m[32m       "2"[m
+[32m+[m[32m      ][m
+[32m+[m[32m     },[m
+[32m+[m[32m     "execution_count": 29,[m
+[32m+[m[32m     "metadata": {},[m
+[32m+[m[32m     "output_type": "execute_result"[m
+[32m+[m[32m    }[m
+[32m+[m[32m   ],[m
+[32m+[m[32m   "source": [[m
+[32m+[m[32m    "next(lst1)"[m
+[32m+[m[32m   ][m
+[32m+[m[32m  },[m
+[32m+[m[32m  {[m
+[32m+[m[32m   "cell_type": "code",[m
+[32m+[m[32m   "execution_count": 30,[m
+[32m+[m[32m   "id": "c7d1f016-f71e-4a55-ae09-9d8a260249b7",[m
+[32m+[m[32m   "metadata": {},[m
+[32m+[m[32m   "outputs": [[m
+[32m+[m[32m    {[m
+[32m+[m[32m     "name": "stdout",[m
+[32m+[m[32m     "output_type": "stream",[m
+[32m+[m[32m     "text": [[m
+[32m+[m[32m      "3\n",[m
+[32m+[m[32m      "4\n",[m
+[32m+[m[32m      "5\n",[m
+[32m+[m[32m      "6\n",[m
+[32m+[m[32m      "7\n"[m
+[32m+[m[32m     ][m
+[32m+[m[32m    }[m
+[32m+[m[32m   ],[m
+[32m+[m[32m   "source": [[m
+[32m+[m[32m    "for i in lst1:\n",[m
+[32m+[m[32m    "    print(i)"[m
+[32m+[m[32m   ][m
+[32m+[m[32m  },[m
+[32m+[m[32m  {[m
+[32m+[m[32m   "cell_type": "code",[m
+[32m+[m[32m   "execution_count": null,[m
+[32m+[m[32m   "id": "aee93fee-6ba4-45c0-9ce1-acc047d6db25",[m
+[32m+[m[32m   "metadata": {},[m
+[32m+[m[32m   "outputs": [],[m
+[32m+[m[32m   "source": [][m
+[32m+[m[32m  },[m
+[32m+[m[32m  {[m
+[32m+[m[32m   "cell_type": "code",[m
+[32m+[m[32m   "execution_count": null,[m
+[32m+[m[32m   "id": "cb501ecf-237b-4914-9c3f-61f07d868d6d",[m
+[32m+[m[32m   "metadata": {},[m
+[32m+[m[32m   "outputs": [],[m
+[32m+[m[32m   "source": [][m
+[32m+[m[32m  },[m
+[32m+[m[32m  {[m
+[32m+[m[32m   "cell_type": "code",[m
+[32m+[m[32m   "execution_count": null,[m
+[32m+[m[32m   "id": "59dc5e1c-d765-454f-aea7-4f29ca878399",[m
+[32m+[m[32m   "metadata": {},[m
+[32m+[m[32m   "outputs": [],[m
+[32m+[m[32m   "source": [][m
+[32m+[m[32m  }[m
+[32m+[m[32m ],[m
+[32m+[m[32m "metadata": {[m
+[32m+[m[32m  "kernelspec": {[m
+[32m+[m[32m   "display_name": "Python 3 (ipykernel)",[m
+[32m+[m[32m   "language": "python",[m
+[32m+[m[32m   "name": "python3"[m
+[32m+[m[32m  },[m
+[32m+[m[32m  "language_info": {[m
+[32m+[m[32m   "codemirror_mode": {[m
+[32m+[m[32m    "name": "ipython",[m
+[32m+[m[32m    "version": 3[m
+[32m+[m[32m   },[m
+[32m+[m[32m   "file_extension": ".py",[m
+[32m+[m[32m   "mimetype": "text/x-python",[m
+[32m+[m[32m   "name": "python",[m
+[32m+[m[32m   "nbconvert_exporter": "python",[m
+[32m+[m[32m   "pygments_lexer": "ipython3",[m
+[32m+[m[32m   "version": "3.11.5"[m
+[32m+[m[32m  }[m
+[32m+[m[32m },[m
+[32m+[m[32m "nbformat": 4,[m
+[32m+[m[32m "nbformat_minor": 5[m
+[32m+[m[32m}[m
+[1mdiff --git a/string_formattting.ipynb b/string_formattting.ipynb[m
+[1mnew file mode 100644[m
+[1mindex 0000000..108ed6d[m
+[1m--- /dev/null[m
+[1m+++ b/string_formattting.ipynb[m
+[36m@@ -0,0 +1,125 @@[m
+[32m+[m[32m{[m
+[32m+[m[32m "cells": [[m
+[32m+[m[32m  {[m
+[32m+[m[32m   "cell_type": "code",[m
+[32m+[m[32m   "execution_count": 1,[m
+[32m+[m[32m   "id": "29dfdd93-fc92-4778-b6f8-90b1f2244123",[m
+[32m+[m[32m   "metadata": {},[m
+[32m+[m[32m   "outputs": [[m
+[32m+[m[32m    {[m
+[32m+[m[32m     "name": "stdout",[m
+[32m+[m[32m     "output_type": "stream",[m
+[32m+[m[32m     "text": [[m
+[32m+[m[32m      "Hello everyone\n"[m
+[32m+[m[32m     ][m
+[32m+[m[32m    }[m
+[32m+[m[32m   ],[m
+[32m+[m[32m   "source": [[m
+[32m+[m[32m    "print(\"Hello everyone\")"[m
+[32m+[m[32m   ][m
+[32m+[m[32m  },[m
+[32m+[m[32m  {[m
+[32m+[m[32m   "cell_type": "code",[m
+[32m+[m[32m   "execution_count": 2,[m
+[32m+[m[32m   "id": "80534556-3fab-435d-9d88-fe85bcb124b8",[m
+[32m+[m[32m   "metadata": {},[m
+[32m+[m[32m   "outputs": [],[m
+[32m+[m[32m   "source": [[m
+[32m+[m[32m    "strs=\"Hello Vimal\""[m
+[32m+[m[32m   ][m
+[32m+[m[32m  },[m
+[32m+[m[32m  {[m
+[32m+[m[32m   "cell_type": "code",[m
+[32m+[m[32m   "execution_count": 4,[m
+[32m+[m[32m   "id": "cfe04695-18eb-4331-a54a-142757bb8d9e",[m
+[32m+[m[32m   "metadata": {},[m
+[32m+[m[32m   "outputs": [],[m
+[32m+[m[32m   "source": [[m
+[32m+[m[32m    "def greeting(name):\n",[m
+[32m+[m[32m    "   
